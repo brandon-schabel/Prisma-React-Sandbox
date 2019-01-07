@@ -1,4 +1,12 @@
+type Note {
+  id: ID! @unique
+  text: String!
+  user: User!
+  done: Boolean @default(value: "false")
+}
+
 type User {
   id: ID! @unique
   name: String!
+  notes: [Note!]
 }
