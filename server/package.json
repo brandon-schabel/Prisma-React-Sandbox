@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Brandon Schabel",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.16.9",
+    "prisma-binding": "^2.2.14"
+  }
+}

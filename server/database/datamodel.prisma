@@ -1,7 +1,7 @@
 type Note {
   id: ID! @unique
   text: String!
-  user: User!
+  user: String!
   done: Boolean @default(value: "false")
 }
 

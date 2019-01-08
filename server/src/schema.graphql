@@ -1,0 +1,14 @@
+# import Note from "./generated/prisma.graphql"
+
+type Query {
+  notes: [Note!]!
+  note(id: ID!): Note
+  user(id: ID!): User
+  users: [User!]!
+
+}
+
+type Mutation {
+  createNote(text: String!, user: String!): Note
+  deleteNote(id: ID!): Note
+}
